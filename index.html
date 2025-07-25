@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for Everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img class="invert" src="logo (1).svg" alt=""> <img class="invert hamburger1" src="svg/exit.svg" alt=""> </div>
+            
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="search.svg" alt="search">Search</li>
+
+                </ul>
+            </div>
+
+            <div class="library bg-grey rounded m-1 p-1">
+
+                <div class="heading">
+                    <img class="invert lib" src="library.svg" alt="">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+                <ul class="songlist">
+                    <!-- <li style="display: flex; gap: 12px;">
+                        <img class="invert" style="width: 20px;" src="svg/music.svg" alt="">
+                        <div class="info">
+                            <div>Song Name</div>
+                            <div>Song Artist</div>
+                        </div>
+                        <div class="playnow">
+                            <span>Play Now</span>
+                            <img class="invert" src="svg/play.svg" alt="">
+                        </div>
+                    </li> -->
+                </ul>
+
+
+                <div class="footer">
+
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/" data-encore-id="textLink"><span
+                                data-encore-id="type">Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/" data-encore-id="textLink">
+                            <span data-encore-id="type">Safety &amp; Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/" data-encore-id="textLink">
+                            <span data-encore-id="type">Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/" data-encore-id="textLink">
+                            <span data-encore-id="type">Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" data-encore-id="textLink">
+                            <span data-encore-id="type">About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/" data-encore-id="textLink">
+                            <span data-encore-id="type">Accessibility</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right bg-grey rounded m-1">
+            <div class="header">
+                <div class="nav">
+                        <img class="invert hamburger" src="hamburger.svg" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+                        fill="none">
+                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+                        fill="none">
+                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="buttons">
+                    <button class="signupbutton">Sign Up</button>
+                    <button class="loginbutton">Login</button>
+                </div>
+            </div>
+
+            <div class="spotifyPlaylists">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer">
+                    <div class="card" data-album="Album1">
+                        <div class="play">
+                            <img src="play-1001-svgrepo-com.svg" alt="">
+                        </div>
+                        <img src="album1.jpg" alt="">
+                        <h2>Ariana Grande Mix</h2>
+                        <p>Songs for the real arinators</p>
+                    </div>
+
+                    <div class="card" data-album="Album2">
+                        <div class="play">
+                            <img src="play-1001-svgrepo-com.svg" alt="">
+                        </div>
+                        <img src="album2.jpg" alt="">
+                        <h2>Workout Playlist</h2>
+                        <p>Hits to boost your mood and fill you with Motivation/p>
+                    </div>
+                    <div class="card" data-album="Album3">
+                        <div class="play">
+                            <img src="play-1001-svgrepo-com.svg" alt="">
+                        </div>
+                        <img src="album3.jpg" alt="">
+                        <h2>Radar World</h2>
+                        <p>Some of the most famour hits in the world</p>
+                    </div>
+                    
+
+                    <div class="playbar">
+                        <div class="seekbar">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="abovebar">
+                            <div class="songinfo">
+        
+                            </div>
+                            <div class="playbuttons">
+                                <img id="previous" src="previous.svg" alt="">
+                                <img id="play" src="play.svg" alt="">
+                                <img id="next" src="next.svg" alt="">
+                            </div>
+                            <div class="songtime">
+        
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+
+    <!-- <button id="selectFolder">Select Folder</button>
+    <ul id="songList"></ul> -->
+
+</body>
+<script src="script.js"></script>
+
+</html>
